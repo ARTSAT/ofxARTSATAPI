@@ -1,0 +1,1210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>ARTSAT API: クラス ofxSATTimeDiff</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../ARTSAT_logo.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ARTSAT API
+   &#160;<span id="projectnumber">2.7.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 作成： Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>クラス</span></a></li>
+      <li><a href="../../files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>構成</span></a></li>
+      <li><a href="../../classes.html"><span>構成索引</span></a></li>
+      <li><a href="../../inherits.html"><span>クラス階層</span></a></li>
+      <li><a href="../../functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('db/d5c/classofx_s_a_t_time_diff.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>マクロ定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public メソッド</a> &#124;
+<a href="#pub-static-methods">Static Public メソッド</a> &#124;
+<a href="../../d6/d89/classofx_s_a_t_time_diff-members.html">すべてのメンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">クラス ofxSATTimeDiff</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>時刻差を表現するクラス  
+ <a href="../../db/d5c/classofx_s_a_t_time_diff.html#details">[詳細]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public メソッド</h2></td></tr>
+<tr class="memitem:abdf259aca22ec288a615440ad1c957db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#abdf259aca22ec288a615440ad1c957db">ofxSATTimeDiff</a> (void)</td></tr>
+<tr class="separator:abdf259aca22ec288a615440ad1c957db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1047957966a9ca89216d41796659bca4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a1047957966a9ca89216d41796659bca4">ofxSATTimeDiff</a> (<a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> const &amp;param)</td></tr>
+<tr class="separator:a1047957966a9ca89216d41796659bca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd72f7d51c577e7b2b5308944ae39bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#adfd72f7d51c577e7b2b5308944ae39bc">ofxSATTimeDiff</a> (int day, int hour, int minute, int second)</td></tr>
+<tr class="separator:adfd72f7d51c577e7b2b5308944ae39bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60692b9172585711e7acb363ff67c7dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a60692b9172585711e7acb363ff67c7dd">ofxSATTimeDiff</a> (int hour, int minute, int second)</td></tr>
+<tr class="separator:a60692b9172585711e7acb363ff67c7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd7f879123e282501efed1de9a4b216"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a1bd7f879123e282501efed1de9a4b216">ofxSATTimeDiff</a> (int minute, int second)</td></tr>
+<tr class="separator:a1bd7f879123e282501efed1de9a4b216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad25058a593ff11f40cec70a5c5b86f04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#ad25058a593ff11f40cec70a5c5b86f04">ofxSATTimeDiff</a> (time_t second)</td></tr>
+<tr class="separator:ad25058a593ff11f40cec70a5c5b86f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a135c254d18758924669bd6ad5fdcb05c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a135c254d18758924669bd6ad5fdcb05c">~ofxSATTimeDiff</a> (void)</td></tr>
+<tr class="separator:a135c254d18758924669bd6ad5fdcb05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17c680c5d41f949aaa8e90530d22b21a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a17c680c5d41f949aaa8e90530d22b21a">operator=</a> (<a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> const &amp;param)</td></tr>
+<tr class="separator:a17c680c5d41f949aaa8e90530d22b21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca56b3cc4014f7729fec933f559cdb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a3ca56b3cc4014f7729fec933f559cdb9">operator+=</a> (<a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> const &amp;param)</td></tr>
+<tr class="separator:a3ca56b3cc4014f7729fec933f559cdb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf778486d6194f3087e1897a5af73ca7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#acf778486d6194f3087e1897a5af73ca7">operator-=</a> (<a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> const &amp;param)</td></tr>
+<tr class="separator:acf778486d6194f3087e1897a5af73ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac64b8cec7203769d494f0c9420e7cdf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#ac64b8cec7203769d494f0c9420e7cdf5">operator*=</a> (int param)</td></tr>
+<tr class="separator:ac64b8cec7203769d494f0c9420e7cdf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a175f4c9acb901aabf24d8fd6d45584cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a175f4c9acb901aabf24d8fd6d45584cf">operator/=</a> (int param)</td></tr>
+<tr class="separator:a175f4c9acb901aabf24d8fd6d45584cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a327662a09f0d603bdedc36edead6932a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a327662a09f0d603bdedc36edead6932a">operator%=</a> (int param)</td></tr>
+<tr class="separator:a327662a09f0d603bdedc36edead6932a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a30a7662ebadc198372dc453a5e1c14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a6a30a7662ebadc198372dc453a5e1c14">operator+</a> (void) const </td></tr>
+<tr class="separator:a6a30a7662ebadc198372dc453a5e1c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc79b64c07262c1321354e40883042d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#adc79b64c07262c1321354e40883042d0">operator-</a> (void) const </td></tr>
+<tr class="separator:adc79b64c07262c1321354e40883042d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8147fce72d3daacd9f589d010c2c343a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a8147fce72d3daacd9f589d010c2c343a">set</a> (<a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> const &amp;param)</td></tr>
+<tr class="separator:a8147fce72d3daacd9f589d010c2c343a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec87b7340e16267672abe6114ac852b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#aec87b7340e16267672abe6114ac852b7">set</a> (int day, int hour, int minute, int second)</td></tr>
+<tr class="separator:aec87b7340e16267672abe6114ac852b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c6971952831eb8991a28595a011009"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a20c6971952831eb8991a28595a011009">get</a> (int *day, int *hour, int *minute, int *second) const </td></tr>
+<tr class="separator:a20c6971952831eb8991a28595a011009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e24ecd8313f57cb4d4978970b18869"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a01e24ecd8313f57cb4d4978970b18869">set</a> (int hour, int minute, int second)</td></tr>
+<tr class="separator:a01e24ecd8313f57cb4d4978970b18869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0a0bf6f14977bf47d0b083e130735c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a3a0a0bf6f14977bf47d0b083e130735c">get</a> (int *hour, int *minute, int *second) const </td></tr>
+<tr class="separator:a3a0a0bf6f14977bf47d0b083e130735c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a79d8bb3da65b3ace1317f9ab85399"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a58a79d8bb3da65b3ace1317f9ab85399">set</a> (int minute, int second)</td></tr>
+<tr class="separator:a58a79d8bb3da65b3ace1317f9ab85399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6ecc12c73bb7a125e94ee4fe7b1c404"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#ab6ecc12c73bb7a125e94ee4fe7b1c404">get</a> (int *minute, int *second) const </td></tr>
+<tr class="separator:ab6ecc12c73bb7a125e94ee4fe7b1c404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3261c661483baf28498fe88134480f5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a3261c661483baf28498fe88134480f5d">set</a> (time_t second)</td></tr>
+<tr class="separator:a3261c661483baf28498fe88134480f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad52bfa7ef54dd6ea1a6594c7d9e0b474"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#ad52bfa7ef54dd6ea1a6594c7d9e0b474">add</a> (<a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> const &amp;param)</td></tr>
+<tr class="separator:ad52bfa7ef54dd6ea1a6594c7d9e0b474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4db4c78eb9f56f155434a5280ce272"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a9c4db4c78eb9f56f155434a5280ce272">sub</a> (<a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> const &amp;param)</td></tr>
+<tr class="separator:a9c4db4c78eb9f56f155434a5280ce272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4526cbf96bfff502e875bd4d84942bb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a4526cbf96bfff502e875bd4d84942bb7">mul</a> (int param)</td></tr>
+<tr class="separator:a4526cbf96bfff502e875bd4d84942bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955ef8ed5a83dcc3c6526475de06dcc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a955ef8ed5a83dcc3c6526475de06dcc5">div</a> (int param)</td></tr>
+<tr class="separator:a955ef8ed5a83dcc3c6526475de06dcc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d737838a1cad395f71863a7d98ad7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a04d737838a1cad395f71863a7d98ad7a">mod</a> (int param)</td></tr>
+<tr class="separator:a04d737838a1cad395f71863a7d98ad7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a810e52d7955f7be64afca9b4c66ccba5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#a810e52d7955f7be64afca9b4c66ccba5">neg</a> (void)</td></tr>
+<tr class="separator:a810e52d7955f7be64afca9b4c66ccba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93fff93b616cf21ad2f78348d0d2411"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#aa93fff93b616cf21ad2f78348d0d2411">equals</a> (<a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> const &amp;param) const </td></tr>
+<tr class="separator:aa93fff93b616cf21ad2f78348d0d2411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeecf204a13148cff7dfb226b1369cbf8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#aeecf204a13148cff7dfb226b1369cbf8">compare</a> (<a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> const &amp;param) const </td></tr>
+<tr class="separator:aeecf204a13148cff7dfb226b1369cbf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba473021c6acdc6cce1b37159aee09bd"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#aba473021c6acdc6cce1b37159aee09bd">asTime_t</a> (void) const </td></tr>
+<tr class="separator:aba473021c6acdc6cce1b37159aee09bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public メソッド</h2></td></tr>
+<tr class="memitem:aad0bb3bab32facb7405306cae5ef70d5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html#aad0bb3bab32facb7405306cae5ef70d5">localTimeOffset</a> (void)</td></tr>
+<tr class="separator:aad0bb3bab32facb7405306cae5ef70d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">説明</h2>
+<div class="textblock"><p>時刻差を表現するクラス </p>
+<p>２つの時刻の差を扱うには <a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html" title="時刻差を表現するクラス">ofxSATTimeDiff</a> クラスを利用します。 時刻を扱うには <a class="el" href="../../da/d62/classofx_s_a_t_time.html" title="時刻を表現するクラス">ofxSATTime</a> クラスを利用します。 </p>
+</div><h2 class="groupheader">コンストラクタとデストラクタ</h2>
+<a class="anchor" id="abdf259aca22ec288a615440ad1c957db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ofxSATTimeDiff::ofxSATTimeDiff </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>コンストラクタです。 値は初期化されません。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a1047957966a9ca89216d41796659bca4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ofxSATTimeDiff::ofxSATTimeDiff </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> const &amp;&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>コンストラクタです。 引数に指定した値が初期値となります。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>初期値 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adfd72f7d51c577e7b2b5308944ae39bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ofxSATTimeDiff::ofxSATTimeDiff </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>day</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>コンストラクタです。 引数に指定した日差・時差・分差・秒差をもとにして初期値を設定します。 各桁で繰り上げや繰り下げが発生したときにも正しく設定されます。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">day</td><td>日差 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hour</td><td>時差 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minute</td><td>分差 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">second</td><td>秒差 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a60692b9172585711e7acb363ff67c7dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ofxSATTimeDiff::ofxSATTimeDiff </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>コンストラクタです。 引数に指定した時差・分差・秒差をもとにして初期値を設定します。 各桁で繰り上げや繰り下げが発生したときにも正しく設定されます。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hour</td><td>時差 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minute</td><td>分差 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">second</td><td>秒差 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1bd7f879123e282501efed1de9a4b216"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ofxSATTimeDiff::ofxSATTimeDiff </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>コンストラクタです。 引数に指定した分差・秒差をもとにして初期値を設定します。 各桁で繰り上げや繰り下げが発生したときにも正しく設定されます。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">minute</td><td>分差 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">second</td><td>秒差 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad25058a593ff11f40cec70a5c5b86f04"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ofxSATTimeDiff::ofxSATTimeDiff </td>
+          <td>(</td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>second</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>コンストラクタです。 引数に指定した POSIX 時刻としての秒差をもとにして初期値を設定します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">second</td><td>POSIX 時刻としての秒差 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a135c254d18758924669bd6ad5fdcb05c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ofxSATTimeDiff::~ofxSATTimeDiff </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>デストラクタです。 </p>
+
+</div>
+</div>
+<h2 class="groupheader">関数</h2>
+<a class="anchor" id="a17c680c5d41f949aaa8e90530d22b21a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp; ofxSATTimeDiff::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> const &amp;&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>値を代入します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>代入する値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>自分への参照 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3ca56b3cc4014f7729fec933f559cdb9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp; ofxSATTimeDiff::operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> const &amp;&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>値を加算します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>加算する値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>自分への参照 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acf778486d6194f3087e1897a5af73ca7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp; ofxSATTimeDiff::operator-= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> const &amp;&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>値を減算します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>減算する値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>自分への参照 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac64b8cec7203769d494f0c9420e7cdf5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp; ofxSATTimeDiff::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>値を乗算します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>乗算する値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>自分への参照 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a175f4c9acb901aabf24d8fd6d45584cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp; ofxSATTimeDiff::operator/= </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>値を除算します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>除算する値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>自分への参照 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a327662a09f0d603bdedc36edead6932a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp; ofxSATTimeDiff::operator%= </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>値の剰余を計算します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>除算する値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>自分への参照 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6a30a7662ebadc198372dc453a5e1c14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> ofxSATTimeDiff::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>正の値を計算します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>計算結果 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adc79b64c07262c1321354e40883042d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> ofxSATTimeDiff::operator- </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>負の値を計算します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>計算結果 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8147fce72d3daacd9f589d010c2c343a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp; ofxSATTimeDiff::set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> const &amp;&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>値を設定します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>設定する値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>自分への参照 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aec87b7340e16267672abe6114ac852b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp; ofxSATTimeDiff::set </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>day</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>引数に指定した日差・時差・分差・秒差をもとにして値を設定します。 各桁で繰り上げや繰り下げが発生したときにも正しく設定されます。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">day</td><td>日差 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hour</td><td>時差 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minute</td><td>分差 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">second</td><td>秒差 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>自分への参照 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a20c6971952831eb8991a28595a011009"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ofxSATTimeDiff::get </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>day</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>hour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>minute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>値を日差・時差・分差・秒差に分解して取得します。 各桁を取得する必要がない場合にはそれぞれの引数に NULL を指定することができます。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">day</td><td>現在の日差 <ul>
+<li>NULL : 日差を返さない </li>
+<li>その他 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hour</td><td>現在の時差 <ul>
+<li>NULL : 時差を返さない </li>
+<li>その他 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">minute</td><td>現在の分差 <ul>
+<li>NULL : 分差を返さない </li>
+<li>その他 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">second</td><td>現在の秒差 <ul>
+<li>NULL : 秒差を返さない </li>
+<li>その他 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a01e24ecd8313f57cb4d4978970b18869"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp; ofxSATTimeDiff::set </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>引数に指定した時差・分差・秒差をもとにして値を設定します。 各桁で繰り上げや繰り下げが発生したときにも正しく設定されます。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hour</td><td>時差 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minute</td><td>分差 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">second</td><td>秒差 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>自分への参照 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3a0a0bf6f14977bf47d0b083e130735c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ofxSATTimeDiff::get </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>hour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>minute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>値を時差・分差・秒差に分解して取得します。 各桁を取得する必要がない場合にはそれぞれの引数に NULL を指定することができます。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">hour</td><td>現在の時差 <ul>
+<li>NULL : 時差を返さない </li>
+<li>その他 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">minute</td><td>現在の分差 <ul>
+<li>NULL : 分差を返さない </li>
+<li>その他 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">second</td><td>現在の秒差 <ul>
+<li>NULL : 秒差を返さない </li>
+<li>その他 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a58a79d8bb3da65b3ace1317f9ab85399"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp; ofxSATTimeDiff::set </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>引数に指定した分差・秒差をもとにして値を設定します。 各桁で繰り上げや繰り下げが発生したときにも正しく設定されます。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">minute</td><td>分差 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">second</td><td>秒差 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>自分への参照 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab6ecc12c73bb7a125e94ee4fe7b1c404"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ofxSATTimeDiff::get </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>minute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>値を分差・秒差に分解して取得します。 各桁を取得する必要がない場合にはそれぞれの引数に NULL を指定することができます。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">minute</td><td>現在の分差 <ul>
+<li>NULL : 分差を返さない </li>
+<li>その他 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">second</td><td>現在の秒差 <ul>
+<li>NULL : 秒差を返さない </li>
+<li>その他 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3261c661483baf28498fe88134480f5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp; ofxSATTimeDiff::set </td>
+          <td>(</td>
+          <td class="paramtype">time_t&#160;</td>
+          <td class="paramname"><em>second</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>引数に指定した POSIX 時刻としての秒差をもとにして値を設定します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">second</td><td>POSIX 時刻としての秒差 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>自分への参照 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad52bfa7ef54dd6ea1a6594c7d9e0b474"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp; ofxSATTimeDiff::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> const &amp;&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>値を加算します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>加算する値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>自分への参照 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9c4db4c78eb9f56f155434a5280ce272"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp; ofxSATTimeDiff::sub </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> const &amp;&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>値を減算します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>減算する値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>自分への参照 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4526cbf96bfff502e875bd4d84942bb7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp; ofxSATTimeDiff::mul </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>値を乗算します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>乗算する値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>自分への参照 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a955ef8ed5a83dcc3c6526475de06dcc5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp; ofxSATTimeDiff::div </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>値を除算します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>除算する値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>自分への参照 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a04d737838a1cad395f71863a7d98ad7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp; ofxSATTimeDiff::mod </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>値の剰余を計算します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>除算する値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>自分への参照 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a810e52d7955f7be64afca9b4c66ccba5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> &amp; ofxSATTimeDiff::neg </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>負の値を計算します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>自分への参照 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa93fff93b616cf21ad2f78348d0d2411"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ofxSATTimeDiff::equals </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> const &amp;&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>値を比較します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>比較する値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>比較結果 </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>同じ </td></tr>
+    <tr><td class="paramname">false</td><td>同じでない </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aeecf204a13148cff7dfb226b1369cbf8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ofxSATTimeDiff::compare </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> const &amp;&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>値の大小を比較します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>比較する値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>比較結果 </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>同じ (this == param) </td></tr>
+    <tr><td class="paramname">+1</td><td>大きい (this &gt; param) </td></tr>
+    <tr><td class="paramname">-1</td><td>小さい (this &lt; param) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aba473021c6acdc6cce1b37159aee09bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t ofxSATTimeDiff::asTime_t </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>POSIX 時刻としての秒差を取得します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>POSIX 時刻としての秒差 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aad0bb3bab32facb7405306cae5ef70d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a> ofxSATTimeDiff::localTimeOffset </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>UTC 時刻からのオフセットを取得します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>取得結果 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../db/d5c/classofx_s_a_t_time_diff.html">ofxSATTimeDiff</a></li>
+    <li class="footer">ARTSAT APIに対してWed Apr 24 2013 01:00:29に生成されました。
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
+  </ul>
+</div>
+</body>
+</html>

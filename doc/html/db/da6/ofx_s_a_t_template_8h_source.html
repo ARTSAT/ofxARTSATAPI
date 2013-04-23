@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>ARTSAT API: src/ofxSATTemplate.h ソースファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../ARTSAT_logo.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ARTSAT API
+   &#160;<span id="projectnumber">2.7.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 作成： Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>メインページ</span></a></li>
+      <li><a href="../../annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="../../files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="../../globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('db/da6/ofx_s_a_t_template_8h_source.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>マクロ定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ofxSATTemplate.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../db/da6/ofx_s_a_t_template_8h.html">説明を見る。</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">**      ARTSAT Project</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">**      Original Copyright (C) 2011 - 2012 HORIGUCHI Junshi.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">**                                          http://iridium.jp/</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">**                                          zap00365@nifty.com</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">**      Portions Copyright (C) &lt;year&gt; &lt;author&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">**                                          &lt;website&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">**                                          &lt;e-mail&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">**      Version     openFrameworks</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">**      Website     http://artsat.jp/</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">**      E-mail      info@artsat.jp</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">**      This source code is for Xcode.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">**      Xcode 4.2 (LLVM compiler 3.0)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">**      ofxSATTemplate.h</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">**      ------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">**      THE SOURCE CODE AND THE BINARY OF ARTSAT API IS DISTRIBUTED UNDER THE MIT LICENSE WRITTEN BELOW.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">**      THE LICENSE OF ANY DATA GOTTEN THROUGH ARTSAT API FOLLOWS PROVIDED LICENSE ON EACH SATELLITE.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">**      ARTSAT API のソースコードとバイナリは下記に示す MIT ライセンスの元で配布されます。</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">**      ARTSAT API を通して取得できるデータのライセンスに関してはデータの提供元となる各衛星の定めるライセンスに準じます。</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">**      The MIT License (MIT)</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">**      Permission is hereby granted, free of charge, to any person obtaining a copy of this software and</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">**      associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">**      including without limitation the rights to use, copy, modify, merge, publish, distribute,</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">**      sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">**      furnished to do so, subject to the following conditions:</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">**      The above copyright notice and this permission notice shall be included in all copies or</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">**      substantial portions of the Software.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">**      THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">**      BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">**      IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">**      WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">**      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">**      以下に定める条件に従い、本ソフトウェアおよび関連文書のファイル（以下「ソフトウェア」）の複製を</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">**      取得するすべての人に対し、ソフトウェアを無制限に扱うことを無償で許可します。</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">**      これには、ソフトウェアの複製を使用、複写、変更、結合、掲載、頒布、サブライセンス、および、または販売する権利、</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">**      およびソフトウェアを提供する相手に同じことを許可する権利も無制限に含まれます。</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">**      上記の著作権表示および本許諾表示を、ソフトウェアのすべての複製または重要な部分に記載するものとします。</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">**      ソフトウェアは「現状のまま」で、明示であるか暗黙であるかを問わず、何らの保証もなく提供されます。</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">**      ここでいう保証とは、商品性、特定の目的への適合性、および権利非侵害についての保証も含みますが、それに限定されるものではありません。</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">**      作者または著作権者は、契約行為、不法行為、またはそれ以外であろうと、ソフトウェアに起因または関連し、</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">**      あるいはソフトウェアの使用またはその他の扱いによって生じる一切の請求、損害、その他の義務について何らの責任も負わないものとします。</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#ifndef __OFX_SATTEMPLATE_H</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __OFX_SATTEMPLATE_H</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/df8/ofx_s_a_t_type_8h.html">ofxSATType.h</a>&quot;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/d2e/ofx_s_a_t_local_d_b_8h.html">ofxSATLocalDB.h</a>&quot;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="../../d6/d66/classofx_s_a_t_template.html">   71</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d6/d66/classofx_s_a_t_template.html" title="各種さまざまな衛星を表すクラスを実装する起点となるテンプレートクラス">ofxSATTemplate</a> : <span class="keyword">public</span> <a class="code" href="../../dc/d71/classofx_s_a_t_local_d_b.html" title="クライアント側にデータベースを持つ衛星に共通する基本的な機能を提供するクラス">ofxSATLocalDB</a> {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="../../d6/d66/classofx_s_a_t_template.html#a35849765353d52d63996188efc97a6bd">   76</a></span>&#160;        <span class="keyword">typedef</span> <a class="code" href="../../d6/d66/classofx_s_a_t_template.html" title="各種さまざまな衛星を表すクラスを実装する起点となるテンプレートクラス">ofxSATTemplate</a>          <span class="keyword">self</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="../../d6/d66/classofx_s_a_t_template.html#a1aa55828274946073ceb251d574548d9">   80</a></span>&#160;        <span class="keyword">typedef</span> <a class="code" href="../../dc/d71/classofx_s_a_t_local_d_b.html" title="クライアント側にデータベースを持つ衛星に共通する基本的な機能を提供するクラス">ofxSATLocalDB</a>           <a class="code" href="../../d6/d66/classofx_s_a_t_template.html#a1aa55828274946073ceb251d574548d9">super</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="code" href="../../d6/d66/classofx_s_a_t_template.html#a91019cfd7ec051b6c9dc8c176d6155fb">   87</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="../../dd/daa/classofx_s_a_t.html#a23240ad46b7959b9762e422ca1e8c078">SensorEnum</a> {</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="../../d6/d66/classofx_s_a_t_template.html#a91019cfd7ec051b6c9dc8c176d6155fba2117638e542c8fe3cccb5f7e8deaad55">   89</a></span>&#160;            <a class="code" href="../../d6/d66/classofx_s_a_t_template.html#a91019cfd7ec051b6c9dc8c176d6155fba2117638e542c8fe3cccb5f7e8deaad55" title="サンプルセンサ">SENSOR_NONE</a>                 = <a class="code" href="../../dd/daa/classofx_s_a_t.html#a23240ad46b7959b9762e422ca1e8c078ad8b0cfab3eee09d6d8c422adc23b15c9" title="センサ定数の最大値">super::SENSOR_LIMIT</a>,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="comment">// default</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="code" href="../../d6/d66/classofx_s_a_t_template.html#a91019cfd7ec051b6c9dc8c176d6155fbae5dcc0f5425512d2d2c36758fca15fc6">   92</a></span>&#160;<span class="comment"></span>            <a class="code" href="../../d6/d66/classofx_s_a_t_template.html#a91019cfd7ec051b6c9dc8c176d6155fbae5dcc0f5425512d2d2c36758fca15fc6" title="センサ定数の最大値">SENSOR_LIMIT</a></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        };</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keyword">explicit</span>                        <a class="code" href="../../d6/d66/classofx_s_a_t_template.html#aba62758e12d01691d3804fc5376d813f">ofxSATTemplate</a>                  (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keyword">virtual</span>                         <a class="code" href="../../d6/d66/classofx_s_a_t_template.html#a2eab8c529cd4d7e13764ea7272134c1a">~ofxSATTemplate</a>                 (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>             <a class="code" href="../../d6/d66/classofx_s_a_t_template.html#a107ca23281c59a444005e5a1d330860c">getAvailableCount</a>               (<span class="keywordtype">int</span>* result) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>             <a class="code" href="../../d6/d66/classofx_s_a_t_template.html#a107ca23281c59a444005e5a1d330860c">getAvailableCount</a>               (<a class="code" href="../../da/d62/classofx_s_a_t_time.html" title="時刻を表現するクラス">ofxSATTime</a> <span class="keyword">const</span>&amp; begin, <a class="code" href="../../da/d62/classofx_s_a_t_time.html" title="時刻を表現するクラス">ofxSATTime</a> <span class="keyword">const</span>&amp; end, <span class="keywordtype">int</span>* result) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>             <a class="code" href="../../d6/d66/classofx_s_a_t_template.html#ae16eb388e48f712f94a800a9fdd4f07e">getAvailableTime</a>                (std::vector&lt;ofxSATTime&gt;* result) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>             <a class="code" href="../../d6/d66/classofx_s_a_t_template.html#ae16eb388e48f712f94a800a9fdd4f07e">getAvailableTime</a>                (<a class="code" href="../../da/d62/classofx_s_a_t_time.html" title="時刻を表現するクラス">ofxSATTime</a> <span class="keyword">const</span>&amp; begin, <a class="code" href="../../da/d62/classofx_s_a_t_time.html" title="時刻を表現するクラス">ofxSATTime</a> <span class="keyword">const</span>&amp; end, std::vector&lt;ofxSATTime&gt;* result) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>             <a class="code" href="../../d6/d66/classofx_s_a_t_template.html#aed04321eb710c8466d3a1a4dd4b67588">getSensorFormat</a>                 (<a class="code" href="../../dd/daa/classofx_s_a_t.html#a390550a479cfcdb61d68846f53ced0e6">SensorType</a> sensor, <a class="code" href="../../dd/daa/classofx_s_a_t.html#a743b223d577cc2566a98d1b65b90b3c0">FormatEnum</a>* result) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>             <a class="code" href="../../d6/d66/classofx_s_a_t_template.html#a0ca6a3a08191d3adb3b55d3bfa82d8b1">getSensorUnit</a>                   (<a class="code" href="../../dd/daa/classofx_s_a_t.html#a390550a479cfcdb61d68846f53ced0e6">SensorType</a> sensor, <a class="code" href="../../dd/daa/classofx_s_a_t.html#a38111e9d27187ac5d3e705521ebd1ec1">UnitEnum</a>* result) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>             <a class="code" href="../../d6/d66/classofx_s_a_t_template.html#a790a6e358c3a910efaa9cbf5760f0845">getSensorMinimum</a>                (<a class="code" href="../../dd/daa/classofx_s_a_t.html#a390550a479cfcdb61d68846f53ced0e6">SensorType</a> sensor, <span class="keywordtype">void</span>* result, <span class="keywordtype">int</span> size) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>             <a class="code" href="../../d6/d66/classofx_s_a_t_template.html#a813fddb02c597879eb721c01e351cb4d">getSensorMaximum</a>                (<a class="code" href="../../dd/daa/classofx_s_a_t.html#a390550a479cfcdb61d68846f53ced0e6">SensorType</a> sensor, <span class="keywordtype">void</span>* result, <span class="keywordtype">int</span> size) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>             <a class="code" href="../../d6/d66/classofx_s_a_t_template.html#a04d19e6f0196b88f5ff708d75a678a3d">getSensorData</a>                   (<a class="code" href="../../dd/daa/classofx_s_a_t.html#a390550a479cfcdb61d68846f53ced0e6">SensorType</a> sensor, <a class="code" href="../../da/d62/classofx_s_a_t_time.html" title="時刻を表現するクラス">ofxSATTime</a> <span class="keyword">const</span>&amp; time, <span class="keywordtype">void</span>* result, <span class="keywordtype">int</span> size, <span class="keywordtype">bool</span>* simulation = NULL) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>             <a class="code" href="../../d6/d66/classofx_s_a_t_template.html#a46af896bf9050864c5d4e5d5b7bcd264">setup</a>                           (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span>                    <a class="code" href="../../d6/d66/classofx_s_a_t_template.html#a3c33599937986842a268fcd0706ebd00">cleanup</a>                         (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>             <a class="code" href="../../d6/d66/classofx_s_a_t_template.html#ae3309e99ea4158c91b3da48e9b016ae4">update</a>                          (<a class="code" href="../../da/d62/classofx_s_a_t_time.html" title="時刻を表現するクラス">ofxSATTime</a> <span class="keyword">const</span>&amp; time = <a class="code" href="../../da/d62/classofx_s_a_t_time.html#a1ac16dcf0246db184095b1f64368ad90">ofxSATTime::currentTime</a>());</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                                        <a class="code" href="../../d6/d66/classofx_s_a_t_template.html#aba62758e12d01691d3804fc5376d813f">ofxSATTemplate</a>                  (<a class="code" href="../../d6/d66/classofx_s_a_t_template.html" title="各種さまざまな衛星を表すクラスを実装する起点となるテンプレートクラス">ofxSATTemplate</a> <span class="keyword">const</span>&amp;);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                <a class="code" href="../../d6/d66/classofx_s_a_t_template.html" title="各種さまざまな衛星を表すクラスを実装する起点となるテンプレートクラス">ofxSATTemplate</a>&amp;         operator=                       (<a class="code" href="../../d6/d66/classofx_s_a_t_template.html" title="各種さまざまな衛星を表すクラスを実装する起点となるテンプレートクラス">ofxSATTemplate</a> <span class="keyword">const</span>&amp;);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;};</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../db/da6/ofx_s_a_t_template_8h.html">ofxSATTemplate.h</a></li>
+    <li class="footer">ARTSAT APIに対してWed Apr 24 2013 01:00:28に生成されました。
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
+  </ul>
+</div>
+</body>
+</html>

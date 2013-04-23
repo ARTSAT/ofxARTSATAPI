@@ -1,0 +1,7 @@
+<map id="ofxSAT" name="ofxSAT">
+<area shape="rect" id="node2" href="$d2/d61/classofx_easy_cube_s_a_t.html" title="CubeSAT を抽象化した仮想の衛星を操作する機能を提供するクラス" alt="" coords="5,83,131,111"/>
+<area shape="rect" id="node3" href="$dc/d71/classofx_s_a_t_local_d_b.html" title="クライアント側にデータベースを持つ衛星に共通する基本的な機能を提供するクラス" alt="" coords="155,83,268,111"/>
+<area shape="rect" id="node5" href="$d5/d9b/classofx_s_a_t_remote_d_b.html" title="サーバ側にデータベースを持つ衛星に共通する基本的な機能を提供するクラス" alt="" coords="293,83,421,111"/>
+<area shape="rect" id="node4" href="$d6/d66/classofx_s_a_t_template.html" title="各種さまざまな衛星を表すクラスを実装する起点となるテンプレートクラス" alt="" coords="153,161,271,189"/>
+<area shape="rect" id="node6" href="$de/def/classofx_invader_s_a_t.html" title="INVADER 衛星を操作する機能を提供するクラス" alt="" coords="303,161,411,189"/>
+</map>

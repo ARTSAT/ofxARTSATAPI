@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>ARTSAT API: src/ofxSATError.h ソースファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../ARTSAT_logo.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ARTSAT API
+   &#160;<span id="projectnumber">2.7.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 作成： Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>メインページ</span></a></li>
+      <li><a href="../../annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="../../files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="../../globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d7/d0e/ofx_s_a_t_error_8h_source.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>マクロ定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>ページ</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ofxSATError.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d7/d0e/ofx_s_a_t_error_8h.html">説明を見る。</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">**      ARTSAT Project</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">**      Original Copyright (C) 2011 - 2012 HORIGUCHI Junshi.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">**                                          http://iridium.jp/</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">**                                          zap00365@nifty.com</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">**      Portions Copyright (C) &lt;year&gt; &lt;author&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">**                                          &lt;website&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">**                                          &lt;e-mail&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">**      Version     openFrameworks</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">**      Website     http://artsat.jp/</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">**      E-mail      info@artsat.jp</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">**      This source code is for Xcode.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">**      Xcode 4.2 (LLVM compiler 3.0)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">**      ofxSATError.h</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">**      ------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">**      THE SOURCE CODE AND THE BINARY OF ARTSAT API IS DISTRIBUTED UNDER THE MIT LICENSE WRITTEN BELOW.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">**      THE LICENSE OF ANY DATA GOTTEN THROUGH ARTSAT API FOLLOWS PROVIDED LICENSE ON EACH SATELLITE.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">**      ARTSAT API のソースコードとバイナリは下記に示す MIT ライセンスの元で配布されます。</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">**      ARTSAT API を通して取得できるデータのライセンスに関してはデータの提供元となる各衛星の定めるライセンスに準じます。</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">**      The MIT License (MIT)</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">**      Permission is hereby granted, free of charge, to any person obtaining a copy of this software and</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">**      associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">**      including without limitation the rights to use, copy, modify, merge, publish, distribute,</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">**      sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">**      furnished to do so, subject to the following conditions:</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">**      The above copyright notice and this permission notice shall be included in all copies or</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">**      substantial portions of the Software.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">**      THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">**      BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">**      IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">**      WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">**      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">**</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">**      以下に定める条件に従い、本ソフトウェアおよび関連文書のファイル（以下「ソフトウェア」）の複製を</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">**      取得するすべての人に対し、ソフトウェアを無制限に扱うことを無償で許可します。</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">**      これには、ソフトウェアの複製を使用、複写、変更、結合、掲載、頒布、サブライセンス、および、または販売する権利、</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">**      およびソフトウェアを提供する相手に同じことを許可する権利も無制限に含まれます。</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">**      上記の著作権表示および本許諾表示を、ソフトウェアのすべての複製または重要な部分に記載するものとします。</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">**      ソフトウェアは「現状のまま」で、明示であるか暗黙であるかを問わず、何らの保証もなく提供されます。</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">**      ここでいう保証とは、商品性、特定の目的への適合性、および権利非侵害についての保証も含みますが、それに限定されるものではありません。</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">**      作者または著作権者は、契約行為、不法行為、またはそれ以外であろうと、ソフトウェアに起因または関連し、</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">**      あるいはソフトウェアの使用またはその他の扱いによって生じる一切の請求、損害、その他の義務について何らの責任も負わないものとします。</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#ifndef __OFX_SATERROR_H</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __OFX_SATERROR_H</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748">   69</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748">SATErrorEnum</a> {</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748a46aa359c78bd7a95906fab1b466d9b97">   71</a></span>&#160;    <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748a46aa359c78bd7a95906fab1b466d9b97" title="エラーなし">SATERROR_OK</a>,</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748a879ccf9a7a84c6297bca45b0c1e826a0">   73</a></span>&#160;    <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748a879ccf9a7a84c6297bca45b0c1e826a0" title="一般的なエラー">SATERROR_FAILED</a>,</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748a2f8ebdb0925a2cb8dd30f29d3ce561e5">   75</a></span>&#160;    <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748a2f8ebdb0925a2cb8dd30f29d3ce561e5" title="関数や機能がサポートされていない">SATERROR_NO_SUPPORT</a>,</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748a6e5b105a0b764e7a24e78f3e7f759446">   77</a></span>&#160;    <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748a6e5b105a0b764e7a24e78f3e7f759446" title="結果が存在しない">SATERROR_NO_RESULT</a>,</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748ae20cdfafa8962591d0ff2568ebebc4ff">   79</a></span>&#160;    <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748ae20cdfafa8962591d0ff2568ebebc4ff" title="空きメモリが確保できない">SATERROR_NO_MEMORY</a>,</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748a4db413cd323acbab8b229081a00ed27a">   81</a></span>&#160;    <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748a4db413cd323acbab8b229081a00ed27a" title="引数が正しくない">SATERROR_INVALID_PARAM</a>,</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748ae5edb8cd47650e253517616fd7a31ee3">   83</a></span>&#160;    <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748ae5edb8cd47650e253517616fd7a31ee3" title="関数や機能の内部状態が正しくない">SATERROR_INVALID_STATE</a>,</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748a3b240dcb6670e122a7adff4381eccf42">   85</a></span>&#160;    <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748a3b240dcb6670e122a7adff4381eccf42" title="書式が正しくない">SATERROR_INVALID_FORMAT</a>,</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748ac48efb84be3ef75362194f38d3893402">   87</a></span>&#160;    <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748ac48efb84be3ef75362194f38d3893402" title="結果を即時に取得できない">SATERROR_WAIT_RESULT</a>,</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748ad73a02c5dabc1b1a8741463f99cda808">   89</a></span>&#160;    <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748ad73a02c5dabc1b1a8741463f99cda808" title="ネットワークが接続されていない">SATERROR_NETWORK_DOWN</a>,</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748a82a7b4d23b6de3f42ab07c4c71c08ff2">   91</a></span>&#160;    <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748a82a7b4d23b6de3f42ab07c4c71c08ff2" title="ネットワークレスポンスのステータスコードが正しくない">SATERROR_NETWORK_CODE</a>,</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748a0726a1df4f92108d6cba359acbcd27aa">   93</a></span>&#160;    <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ab73ef99a31a09f2b17b8449e0a13c748a0726a1df4f92108d6cba359acbcd27aa" title="エラー定数の最大値">SATERROR_LIMIT</a></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="code" href="../../d7/da7/classofx_s_a_t_error.html">  102</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                <span class="keywordtype">int</span>                     _error;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keyword">explicit</span>                        <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#afaab2de0b02fbe23379ccd2b8a4d917d">ofxSATError</a>                     (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                        <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#afaab2de0b02fbe23379ccd2b8a4d917d">ofxSATError</a>                     (<a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; param);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                        <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#afaab2de0b02fbe23379ccd2b8a4d917d">ofxSATError</a>                     (<span class="keywordtype">int</span> param);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                                        <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#ad29e3136da29cee00a702ea1fad4b23a">~ofxSATError</a>                    (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>&amp;            <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#ade0fe7a4bc9a16bbf4f27a178b67ef4c">operator=                       </a>(<a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; param);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>&amp;            <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#ade0fe7a4bc9a16bbf4f27a178b67ef4c">operator=                       </a>(<span class="keywordtype">int</span> param);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                                        <span class="keyword">operator</span> int                    (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>&amp;            <span class="keyword">set</span>                             (<a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; param);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>&amp;            <span class="keyword">set</span>                             (<span class="keywordtype">int</span> param);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                <span class="keywordtype">int</span>                     <span class="keyword">get</span>                             (void) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                <span class="keywordtype">bool</span>                    <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a3cd5bd365f43df76fb4417b6c95d9c69">equals</a>                          (<a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; param) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                <span class="keywordtype">bool</span>                    <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a3cd5bd365f43df76fb4417b6c95d9c69">equals</a>                          (<span class="keywordtype">int</span> param) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                std::string             <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a771ec3a0e434866038f54bef1757d4e8">print</a>                           (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;};</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="keyword">extern</span>  <span class="keywordtype">bool</span>                            <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ad8d7dffc56c10f8fe506611b48cabd93">operator==                      </a>(<a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; x, <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; y);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keyword">extern</span>  <span class="keywordtype">bool</span>                            <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ad8d7dffc56c10f8fe506611b48cabd93">operator==                      </a>(<a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="keyword">extern</span>  <span class="keywordtype">bool</span>                            <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ad8d7dffc56c10f8fe506611b48cabd93">operator==                      </a>(<span class="keywordtype">int</span> x, <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; y);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="keyword">extern</span>  <span class="keywordtype">bool</span>                            <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#a3245ec02488d0374596543457be79c61">operator!=                      </a>(<a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; x, <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; y);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="keyword">extern</span>  <span class="keywordtype">bool</span>                            <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#a3245ec02488d0374596543457be79c61">operator!=                      </a>(<a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keyword">extern</span>  <span class="keywordtype">bool</span>                            <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#a3245ec02488d0374596543457be79c61">operator!=                      </a>(<span class="keywordtype">int</span> x, <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; y);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno"><a class="code" href="../../d7/da7/classofx_s_a_t_error.html#afaab2de0b02fbe23379ccd2b8a4d917d">  242</a></span>&#160;<span class="comment">/*public */</span><span class="keyword">inline</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#afaab2de0b02fbe23379ccd2b8a4d917d">ofxSATError::ofxSATError</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;{</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;}</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a4746095647f589d2f86636a5fdad89ff">  246</a></span>&#160;<span class="comment">/*public */</span><span class="keyword">inline</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#afaab2de0b02fbe23379ccd2b8a4d917d">ofxSATError::ofxSATError</a>(<a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; param)</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;{</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keyword">set</span>(param);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;}</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a28775f14b0098a0014ca5998efa27cdd">  251</a></span>&#160;<span class="comment">/*public */</span><span class="keyword">inline</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#afaab2de0b02fbe23379ccd2b8a4d917d">ofxSATError::ofxSATError</a>(<span class="keywordtype">int</span> param)</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;{</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keyword">set</span>(param);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;}</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno"><a class="code" href="../../d7/da7/classofx_s_a_t_error.html#ad29e3136da29cee00a702ea1fad4b23a">  256</a></span>&#160;<span class="comment">/*public */</span><span class="keyword">inline</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#ad29e3136da29cee00a702ea1fad4b23a">ofxSATError::~ofxSATError</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;{</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;}</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="code" href="../../d7/da7/classofx_s_a_t_error.html#ade0fe7a4bc9a16bbf4f27a178b67ef4c">  260</a></span>&#160;<span class="comment">/*public */</span><span class="keyword">inline</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>&amp; <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#ade0fe7a4bc9a16bbf4f27a178b67ef4c">ofxSATError::operator=</a>(<a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; param)</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;{</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">set</span>(param);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;}</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno"><a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a69855b16efb22e17dce95622faa98524">  265</a></span>&#160;<span class="comment">/*public */</span><span class="keyword">inline</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>&amp; <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#ade0fe7a4bc9a16bbf4f27a178b67ef4c">ofxSATError::operator=</a>(<span class="keywordtype">int</span> param)</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;{</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">set</span>(param);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;}</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno"><a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a5aa3f70d1924564b5a03fa8bb7278ce6">  270</a></span>&#160;<span class="comment">/*public */</span><span class="keyword">inline</span> ofxSATError::operator int(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">get</span>();</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;}</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno"><a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a75d1bb7e43d39044fcf75163dcae414a">  275</a></span>&#160;<span class="comment">/*public */</span><span class="keyword">inline</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>&amp; <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a75d1bb7e43d39044fcf75163dcae414a">ofxSATError::set</a>(<a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; param)</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;{</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    _error = param._error;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;}</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="code" href="../../d7/da7/classofx_s_a_t_error.html#addce1150ea806c995be39dfe77eb2f94">  281</a></span>&#160;<span class="comment">/*public */</span><span class="keyword">inline</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a>&amp; <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a75d1bb7e43d39044fcf75163dcae414a">ofxSATError::set</a>(<span class="keywordtype">int</span> param)</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;{</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    _error = param;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno"><a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a6c4d9ef1494178a252e003a488caf05c">  287</a></span>&#160;<span class="comment">/*public */</span><span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a6c4d9ef1494178a252e003a488caf05c">ofxSATError::get</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordflow">return</span> _error;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno"><a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a3cd5bd365f43df76fb4417b6c95d9c69">  292</a></span>&#160;<span class="comment">/*public */</span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a3cd5bd365f43df76fb4417b6c95d9c69">ofxSATError::equals</a>(<a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; param)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordflow">return</span> (_error == param._error);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;}</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno"><a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a2777ae5a02bff80be92f79819223247b">  297</a></span>&#160;<span class="comment">/*public */</span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a3cd5bd365f43df76fb4417b6c95d9c69">ofxSATError::equals</a>(<span class="keywordtype">int</span> param)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordflow">return</span> (_error == param);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;}</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ad8d7dffc56c10f8fe506611b48cabd93">  302</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ad8d7dffc56c10f8fe506611b48cabd93">operator==</a>(<a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; x, <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; y)</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;{</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordflow">return</span> x.<a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a3cd5bd365f43df76fb4417b6c95d9c69">equals</a>(y);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;}</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ad161e491b99a907c53427526f063decf">  307</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ad8d7dffc56c10f8fe506611b48cabd93">operator==</a>(<a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; x, <span class="keywordtype">int</span> y)</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;{</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordflow">return</span> x.<a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a3cd5bd365f43df76fb4417b6c95d9c69">equals</a>(y);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;}</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#a0ebb899d9b8f1bb9704d53e22c9e35f8">  312</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ad8d7dffc56c10f8fe506611b48cabd93">operator==</a>(<span class="keywordtype">int</span> x, <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; y)</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;{</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordflow">return</span> y.<a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a3cd5bd365f43df76fb4417b6c95d9c69">equals</a>(x);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;}</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
+<div class="line"><a name="l00317"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#a3245ec02488d0374596543457be79c61">  317</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#a3245ec02488d0374596543457be79c61">operator!=</a>(<a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; x, <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; y)</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;{</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordflow">return</span> !x.<a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a3cd5bd365f43df76fb4417b6c95d9c69">equals</a>(y);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;}</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
+<div class="line"><a name="l00322"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#a1217a7d94854bdb605e0336daec8fe15">  322</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#a3245ec02488d0374596543457be79c61">operator!=</a>(<a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; x, <span class="keywordtype">int</span> y)</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;{</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">return</span> !x.<a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a3cd5bd365f43df76fb4417b6c95d9c69">equals</a>(y);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;}</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno"><a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#ae82a0d32ac33d598b927db94b056fe60">  327</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d7/d0e/ofx_s_a_t_error_8h.html#a3245ec02488d0374596543457be79c61">operator!=</a>(<span class="keywordtype">int</span> x, <a class="code" href="../../d7/da7/classofx_s_a_t_error.html" title="エラー値を表現するクラス">ofxSATError</a> <span class="keyword">const</span>&amp; y)</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;{</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordflow">return</span> !y.<a class="code" href="../../d7/da7/classofx_s_a_t_error.html#a3cd5bd365f43df76fb4417b6c95d9c69">equals</a>(x);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;}</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../d7/d0e/ofx_s_a_t_error_8h.html">ofxSATError.h</a></li>
+    <li class="footer">ARTSAT APIに対してWed Apr 24 2013 01:00:28に生成されました。
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
+  </ul>
+</div>
+</body>
+</html>

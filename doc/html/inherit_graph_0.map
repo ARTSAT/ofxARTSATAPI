@@ -1,0 +1,9 @@
+<map id="クラス階層図" name="クラス階層図">
+<area shape="rect" id="node1" href="$d7/d33/classofx_s_a_t_1_1_notifier.html" title="通知を受け取るための機能を提供するクラス" alt="" coords="5,5,117,33"/>
+<area shape="rect" id="node2" href="$d2/d61/classofx_easy_cube_s_a_t.html" title="CubeSAT を抽象化した仮想の衛星を操作する機能を提供するクラス" alt="" coords="168,5,293,33"/>
+<area shape="rect" id="node4" href="$de/def/classofx_invader_s_a_t.html" title="INVADER 衛星を操作する機能を提供するクラス" alt="" coords="350,134,458,162"/>
+<area shape="rect" id="node5" href="$dd/daa/classofx_s_a_t.html" title="すべての衛星に共通する基本的な機能を提供するクラス" alt="" coords="29,57,93,85"/>
+<area shape="rect" id="node6" href="$dc/d71/classofx_s_a_t_local_d_b.html" title="クライアント側にデータベースを持つ衛星に共通する基本的な機能を提供するクラス" alt="" coords="173,57,288,85"/>
+<area shape="rect" id="node8" href="$d5/d9b/classofx_s_a_t_remote_d_b.html" title="サーバ側にデータベースを持つ衛星に共通する基本的な機能を提供するクラス" alt="" coords="166,109,295,137"/>
+<area shape="rect" id="node7" href="$d6/d66/classofx_s_a_t_template.html" title="各種さまざまな衛星を表すクラスを実装する起点となるテンプレートクラス" alt="" coords="345,57,463,85"/>
+</map>
