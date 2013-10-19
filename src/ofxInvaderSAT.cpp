@@ -291,12 +291,14 @@ static  ofxInvaderSAT::TableRec const
 
 /*public virtual */ofxSATError ofxInvaderSAT::getAvailableCount(int* result) const
 {
+    /*
     ofxSATError error(SATERROR_OK);
     
     if ((error = super::getAvailableCount(result)) == SATERROR_NO_SUPPORT) {
         error = getAvailableCount(false, ofxSATTime(), ofxSATTime(), result);
     }
-    return error;
+    return error;*/
+    return super::getAvailableCount(result);
 }
 
 /*public virtual */ofxSATError ofxInvaderSAT::getAvailableCount(ofxSATTime const& begin, ofxSATTime const& end, int* result) const
@@ -311,12 +313,15 @@ static  ofxInvaderSAT::TableRec const
 
 /*public virtual */ofxSATError ofxInvaderSAT::getAvailableTime(std::vector<ofxSATTime>* result) const
 {
+    /*
     ofxSATError error(SATERROR_OK);
     
     if ((error = super::getAvailableTime(result)) == SATERROR_NO_SUPPORT) {
         error = getAvailableTime(false, ofxSATTime(), ofxSATTime(), result);
     }
     return error;
+     */
+    return super::getAvailableTime(result);
 }
 
 /*public virtual */ofxSATError ofxInvaderSAT::getAvailableTime(ofxSATTime const& begin, ofxSATTime const& end, std::vector<ofxSATTime>* result) const
