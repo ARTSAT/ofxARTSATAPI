@@ -443,6 +443,7 @@ static  ofxInvaderSAT::TableRec const
 /*public virtual */ofxSATError ofxInvaderSAT::getSensorData(SensorType sensor, ofxSATTime const& time, void* result, int size, bool* simulation) const
 {
     TableRec const* table;
+    std::string query;
     ofxXmlSettings xml;
     int tempInt;
     double tempDouble;
@@ -452,7 +453,15 @@ static  ofxInvaderSAT::TableRec const
     if ((error = super::getSensorData(sensor, time, result, size, simulation)) == SATERROR_NO_SUPPORT) {
         error = SATERROR_OK;
         if ((table = getTableBySensor(sensor)) != NULL) {
-            if ((error = fetchXML("sensor_data.xml?&sensor=" + std::string(table->query) + convertToUNIXTime(time), &xml)) == SATERROR_OK) {
+            query = "sensor_data.xml?&sensor=";
+            query += table->query;
+            if (simulation != NULL) {
+                if (*simulation) {
+                    query += "&intrpl=linear";
+                }
+            }
+            query += convertToUNIXTime(time);
+            if ((error = fetchXML(query, &xml)) == SATERROR_OK) {
                 if (xml.pushTag("results")) {
                     if (xml.pushTag("item")) {
                         if (xml.pushTag("sensors")) {

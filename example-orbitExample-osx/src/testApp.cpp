@@ -375,16 +375,20 @@ void SATOrbit::onNotifyFinish(ofxSATError const& error)
 {
     ofxSAT::Notifier::onNotifyFinish(error);
     
-    /*
     ofxSATTime time = ofxSATTime::currentTime();
     int c;
     vector<ofxSATTime> t;
     
-    _sat->getAvailableCount(ofxSATTime(time).subDay(1), time, &c);
-    _sat->getAvailableTime(ofxSATTime(time).subDay(1), time, &t);
-    cout << "c = " << c << endl;
-    cout << "t = " << t.size() << endl;
-     */
+    double r = 0.0;
+    bool sim = true;
+    
+    static_cast<ofxInvaderSAT*>(_sat)->getSensorGyroX(time, &r, &sim);
+    cout << "gyroX = " << r << endl;
+    
+    //_sat->getAvailableCount(ofxSATTime(time).subHour(1), time, &c);
+    //_sat->getAvailableTime(ofxSATTime(time).subHour(1), time, &t);
+    //cout << "c = " << c << endl;
+    //cout << "t = " << t.size() << endl;
     return;
 }
 
