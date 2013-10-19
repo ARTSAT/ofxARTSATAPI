@@ -1,7 +1,7 @@
 /*
 **      ARTSAT Project
 **
-**      Original Copyright (C) 2011 - 2012 HORIGUCHI Junshi.
+**      Original Copyright (C) 2011 - 2013 HORIGUCHI Junshi.
 **                                          http://iridium.jp/
 **                                          zap00365@nifty.com
 **      Portions Copyright (C) <year> <author>
@@ -53,7 +53,7 @@
 #include "ofxInvaderSAT.h"
 
 #define SAT_ID                  ("norad://00000")
-#define URL_QUERY               ("http://api.artsat.jp/web/invader/")
+#define URL_QUERY               ("http://api.artsat.jp/web/v2/invader/")
 #define DEFAULT_UPDATE          (5)
 #define DEFAULT_RETRY           (60)
 #define THREAD_SLEEP            (100)
@@ -447,62 +447,86 @@ static  ofxInvaderSAT::TableRec const
     if ((error = super::getSensorData(sensor, time, result, size, simulation)) == SATERROR_NO_SUPPORT) {
         error = SATERROR_OK;
         if ((table = getTableBySensor(sensor)) != NULL) {
-            if ((error = fetchXML("getSensorData?&sensor=" + std::string(table->query) + convertToUNIXTime(time), &xml)) == SATERROR_OK) {
-                if (result != NULL) {
-                    if ((error = checkSize(table->format, size)) == SATERROR_OK) {
-                        switch (table->format) {
-                            case FORMAT_BOOL:
-                                if ((tempInt = xml.getValue("data", INT_MIN)) != INT_MIN) {
-                                    *static_cast<bool*>(result) = tempInt;
+            if ((error = fetchXML("sensor_data.xml?&sensor=" + std::string(table->query) + convertToUNIXTime(time), &xml)) == SATERROR_OK) {
+                if (xml.pushTag("results")) {
+                    if (xml.pushTag("item")) {
+                        if (xml.pushTag("sensors")) {
+                            if (xml.pushTag(std::string(table->query))) {
+                                if (result != NULL) {
+                                    if ((error = checkSize(table->format, size)) == SATERROR_OK) {
+                                        switch (table->format) {
+                                            case FORMAT_BOOL:
+                                                if ((tempInt = xml.getValue("value", INT_MIN)) != INT_MIN) {
+                                                    *static_cast<bool*>(result) = tempInt;
+                                                }
+                                                else {
+                                                    error = SATERROR_NO_RESULT;
+                                                }
+                                                break;
+                                            case FORMAT_INT:
+                                                if ((tempInt = xml.getValue("value", INT_MIN)) != INT_MIN) {
+                                                    *static_cast<int*>(result) = tempInt;
+                                                }
+                                                else {
+                                                    error = SATERROR_NO_RESULT;
+                                                }
+                                                break;
+                                            case FORMAT_DOUBLE:
+                                                if ((tempDouble = xml.getValue("value", NAN)) != NAN) {
+                                                    *static_cast<double*>(result) = tempDouble;
+                                                }
+                                                else {
+                                                    error = SATERROR_NO_RESULT;
+                                                }
+                                                break;
+                                            case FORMAT_STRING:
+                                                tempString = xml.getValue("value", "");
+                                                if (!tempString.empty()) {
+                                                    *static_cast<std::string*>(result) = tempString;
+                                                }
+                                                else {
+                                                    error = SATERROR_NO_RESULT;
+                                                }
+                                                break;
+                                            case FORMAT_OFXSATTIME:
+                                                tempString = xml.getValue("value", "");
+                                                if (!tempString.empty()) {
+                                                    error = convertUNIXTimeTo(tempString, static_cast<ofxSATTime*>(result));
+                                                }
+                                                else {
+                                                    error = SATERROR_NO_RESULT;
+                                                }
+                                                break;
+                                            default:
+                                                error = SATERROR_FAILED;
+                                                break;
+                                        }
+                                    }
                                 }
-                                else {
-                                    error = SATERROR_NO_RESULT;
+                                if (error == SATERROR_OK) {
+                                    if (simulation != NULL) {
+                                        *simulation = true;
+                                    }
                                 }
-                                break;
-                            case FORMAT_INT:
-                                if ((tempInt = xml.getValue("data", INT_MIN)) != INT_MIN) {
-                                    *static_cast<int*>(result) = tempInt;
-                                }
-                                else {
-                                    error = SATERROR_NO_RESULT;
-                                }
-                                break;
-                            case FORMAT_DOUBLE:
-                                if ((tempDouble = xml.getValue("data", NAN)) != NAN) {
-                                    *static_cast<double*>(result) = tempDouble;
-                                }
-                                else {
-                                    error = SATERROR_NO_RESULT;
-                                }
-                                break;
-                            case FORMAT_STRING:
-                                tempString = xml.getValue("data", "");
-                                if (!tempString.empty()) {
-                                    *static_cast<std::string*>(result) = tempString;
-                                }
-                                else {
-                                    error = SATERROR_NO_RESULT;
-                                }
-                                break;
-                            case FORMAT_OFXSATTIME:
-                                tempString = xml.getValue("data", "");
-                                if (!tempString.empty()) {
-                                    error = convertUNIXTimeTo(tempString, static_cast<ofxSATTime*>(result));
-                                }
-                                else {
-                                    error = SATERROR_NO_RESULT;
-                                }
-                                break;
-                            default:
-                                error = SATERROR_FAILED;
-                                break;
+                                xml.popTag();
+                            }
+                            else {
+                                error = SATERROR_INVALID_FORMAT;
+                            }
+                            xml.popTag();
                         }
+                        else {
+                            error = SATERROR_INVALID_FORMAT;
+                        }
+                        xml.popTag();
                     }
+                    else {
+                        error = SATERROR_INVALID_FORMAT;
+                    }
+                    xml.popTag();
                 }
-                if (error == SATERROR_OK) {
-                    if (simulation != NULL) {
-                        *simulation = true;
-                    }
+                else {
+                    error = SATERROR_INVALID_FORMAT;
                 }
             }
         }
@@ -599,12 +623,18 @@ static  ofxInvaderSAT::TableRec const
     ofxXmlSettings xml;
     ofxSATError error(SATERROR_OK);
     
-    query = "getAvailableCount?";
+    query = "discrete_sensor_data.xml?&sensor=none";
     if (range) {
         query += convertToUNIXTime(begin, end);
     }
     if ((error = fetchXML(query, &xml)) == SATERROR_OK) {
-        *result = xml.getValue("count", 0);
+        if (xml.pushTag("results")) {
+            *result = xml.getNumTags("item");
+            xml.popTag();
+        }
+        else {
+            error = SATERROR_INVALID_FORMAT;
+        }
     }
     return error;
 }
@@ -619,16 +649,22 @@ static  ofxInvaderSAT::TableRec const
     int i;
     ofxSATError error(SATERROR_OK);
     
-    query = "getAvailableTime?&limit=32768";
+    query = "discrete_sensor_data.xml?&sensor=none";
     if (range) {
         query += convertToUNIXTime(begin, end);
     }
     if ((error = fetchXML(query, &xml)) == SATERROR_OK) {
-        if (xml.pushTag("time")) {
-            count = xml.getNumTags("time");
+        if (xml.pushTag("results")) {
+            count = xml.getNumTags("item");
             for (i = 0; i < count && error == SATERROR_OK; ++i) {
-                if ((time = xml.getValue("time", 0, i)) != 0) {
-                    temp.push_back(ofxSATTime(time));
+                if (xml.pushTag("item", i)) {
+                    if ((time = xml.getValue("time_unix", 0)) != 0) {
+                        temp.push_back(ofxSATTime(time));
+                    }
+                    else {
+                        error = SATERROR_INVALID_FORMAT;
+                    }
+                    xml.popTag();
                 }
                 else {
                     error = SATERROR_INVALID_FORMAT;
@@ -665,14 +701,20 @@ static  ofxInvaderSAT::TableRec const
     
     if (result != NULL) {
         for (fetch = false; !fetch && isThreadRunning() && !isImmediate() && error == SATERROR_OK; ) {
-            error = fetchXML("getAvailableTime?&limit=1", &xml);
+            error = fetchXML("sensor_data.xml?&sensor=none", &xml);
             switch (error) {
                 case SATERROR_OK:
-                    if (xml.pushTag("time")) {
-                        if ((time = xml.getValue("time", 0)) != 0) {
-                            *result = time;
-                            fetch = true;
-                            ofSleepMillis(THREAD_SLEEP);
+                    if (xml.pushTag("results")) {
+                        if (xml.pushTag("item")) {
+                            if ((time = xml.getValue("closest_available_time_unix", 0)) != 0) {
+                                *result = time;
+                                fetch = true;
+                                ofSleepMillis(THREAD_SLEEP);
+                            }
+                            else {
+                                error = SATERROR_INVALID_FORMAT;
+                            }
+                            xml.popTag();
                         }
                         else {
                             error = SATERROR_INVALID_FORMAT;
@@ -712,15 +754,21 @@ static  ofxInvaderSAT::TableRec const
         *result = begin;
         if (begin < end) {
             for (fetch = false; !fetch && isThreadRunning() && !isImmediate() && error == SATERROR_OK; ) {
-                error = fetchXML("getAvailableTime?&limit=32768" + convertToUNIXTime(begin + 1, end + 1), &xml);
+                error = fetchXML("discrete_sensor_data.xml?&sensor=none" + convertToUNIXTime(begin + 1, end + 1), &xml);
                 switch (error) {
                     case SATERROR_OK:
-                        if (xml.pushTag("time")) {
-                            count = xml.getNumTags("time");
+                        if (xml.pushTag("results")) {
+                            count = xml.getNumTags("item");
                             for (i = 0; i < count; ++i) {
-                                if ((time = xml.getValue("time", 0, i)) != 0) {
-                                    *result = time;
-                                    notifyData(ofxSATTime(time));
+                                if (xml.pushTag("item", i)) {
+                                    if ((time = xml.getValue("time_unix", 0)) != 0) {
+                                        *result = time;
+                                        notifyData(ofxSATTime(time));
+                                    }
+                                    xml.popTag();
+                                }
+                                else {
+                                    // TODO:
                                 }
                             }
                             fetch = true;
@@ -754,7 +802,7 @@ static  ofxInvaderSAT::TableRec const
     ofxSATError error(SATERROR_OK);
     
     if (result != NULL) {
-        response = ofLoadURL(URL_QUERY + query + "&format=xml");
+        response = ofLoadURL(URL_QUERY + query);
         if (response.status >= 0) {
             switch (response.status) {
                 case 200:
@@ -882,7 +930,7 @@ static  ofxInvaderSAT::TableRec const
 {
     char result[64] = "\0";
     
-    snprintf(result, sizeof(result), "&begin=%ld&end=%ld", begin, end);
+    snprintf(result, sizeof(result), "&period=%ld,%ld", begin, end);
     return result;
 }
 

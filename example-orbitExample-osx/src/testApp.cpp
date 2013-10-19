@@ -374,6 +374,17 @@ void SATOrbit::onNotifyData(ofxSATTime const& time)
 void SATOrbit::onNotifyFinish(ofxSATError const& error)
 {
     ofxSAT::Notifier::onNotifyFinish(error);
+    
+    /*
+    ofxSATTime time = ofxSATTime::currentTime();
+    int c;
+    vector<ofxSATTime> t;
+    
+    _sat->getAvailableCount(ofxSATTime(time).subDay(1), time, &c);
+    _sat->getAvailableTime(ofxSATTime(time).subDay(1), time, &t);
+    cout << "c = " << c << endl;
+    cout << "t = " << t.size() << endl;
+     */
     return;
 }
 
